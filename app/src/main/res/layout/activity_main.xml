@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Könyv címe" />
+
+    <EditText
+        android:id="@+id/editAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Szerző neve" />
+
+    <EditText
+        android:id="@+id/editPages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Oldalak száma"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hozzáadás" />
+
+    <ListView
+        android:id="@+id/listViewBooks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+  </LinearLayout>
